@@ -22,4 +22,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('', views.Home , name='home'),
     path('app/',include('myApp.urls')),
+    
+    
+    path("__reload__/", include("django_browser_reload.urls")),
 ]
