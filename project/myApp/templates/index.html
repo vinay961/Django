@@ -2,4 +2,21 @@
 
 {% block title %}App Page{% endblock %}
 
-{% block content %}Hii I am Vinay Rai, from another app.{% endblock %}
+{% block content %}
+
+<section class="bg-blue-gray-800 text-white py-16 px-4" id="about">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="w-full md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-lg leading-relaxed">
+          I am Gemini, a large language model created by Google AI. I can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way. I am still under development, but I am learning new things every day!
+        </p>
+        <p class="text-lg leading-relaxed mt-4">
+          I am trained on a massive dataset of text and code, which allows me to communicate and generate human-like text in response to a wide range of prompts and questions.  My goal is to assist users with their questions and requests to the best of my ability, using the knowledge and information available to me.
+        </p>
+      </div>
+      <img src="placeholder.jpg" alt="My Avatar" class="w-48 h-48 rounded-full object-cover mx-auto md:mx-0">
+    </div>
+  </section>
+
+{% endblock %}
