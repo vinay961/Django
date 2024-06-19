@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Info_Details
+{% endblock %}
+
+{% block content %}
+  <div class="container mx-auto p-8 bg-blue-800 shadow-lg rounded-lg overflow-hidden">
+    
+      <div class="flex-shrink-0 md:w-1/2">
+        <img class="rounded-md mb-4 md:mb-0 md:mr-6 w-full h-auto" src="{{ infor.image.url }}" alt="{{ infor.name }}">
+      </div>
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-bold text-white-900 mb-4">{{ infor.name }}</h3>
+        <p class="text-white-700 mb-6">{{ infor.description }}</p>
+        <a href="{% url 'home' %}">
+          <button class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded">Back</button>
+        </a>
+      </div>
+    
+  </div>
+{% endblock %}
